@@ -1,7 +1,81 @@
+/* primary colors*/
+$Lightgray: #CECECE
+$LightGrayishBlue: #ECF2F8
+
+/* secondary colors*/
+
+$Moderateviolet: #7441C7
+$Very-dark-grayish-blue: #48556A
+$Very-dark-blackish-blue: #19202E
+$White: #ffffff
+
 *
     margin: 0
     padding: 0
     box-sizing: border-box
 
-    .grid-container 
-        display: flex
+    html,body
+        width: 100%
+        background-color: $Lightgray
+
+.grid-container
+    max-width: 1440px
+    max-height: 100%
+    display: grid
+    grid-template-columns: repeat(12 8,33%)
+    grid-template-rows: repeat(12 8,33%)
+    gap: 2%
+
+    .daniel
+        padding: 2%
+        text-align: justify
+        color: $White
+        background-color: $Moderateviolet
+        border-radius: 5%
+        grid-row-start: 1
+        grid-row-end: 6
+        grid-column-start: 1
+        grid-column-end: span 9
+    .michele
+        padding: 2%
+        text-align: justify
+        color: $Very-dark-blackish-blue
+        background-color: $White
+        border-radius: 5%
+        grid-row-start: 1
+        grid-row-end: 12
+        grid-column-start: 11
+        grid-column-end: span 1
+    .vitor
+        padding: 2%
+        text-align: justify
+        color: $White
+        background-color: $Very-dark-blackish-blue
+        border-radius: 5%
+        grid-row-start: 1
+        grid-row-end: 6
+        grid-column-start: 10
+        grid-column-end: span 1
+    .augusto
+        padding: 2%
+        text-align: justify
+        color: $White
+        background-color: $Very-dark-grayish-blue
+        border-radius: 5%
+        grid-column-start: 3
+        grid-column-end: 11
+        grid-row-start: 6
+        grid-row-end: 12
+
+    .adriana
+        padding: 2%
+        text-align: justify
+        color: $Very-dark-blackish-blue
+        background-color: $White
+        border-radius: 5%
+        grid-column-start: 1
+        grid-column-end: 3
+        grid-row-start: 6
+        grid-row-end: 12
+
+        /*adaptando para outros dispositivos*/

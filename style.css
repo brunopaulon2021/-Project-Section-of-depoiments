@@ -1,9 +1,82 @@
+/* primary colors*/
+/* secondary colors*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-* .grid-container {
-  display: flex;
+* html, * body {
+  width: 100%;
+  background-color: #CECECE;
+}
+
+.grid-container {
+  max-width: 1440px;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12 8, 33%);
+  grid-template-rows: repeat(12 8, 33%);
+  gap: 2%;
+}
+
+.grid-container .daniel {
+  padding: 2%;
+  text-align: justify;
+  color: #ffffff;
+  background-color: #7441C7;
+  border-radius: 5%;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: span 9;
+}
+
+.grid-container .michele {
+  padding: 2%;
+  text-align: justify;
+  color: #19202E;
+  background-color: #ffffff;
+  border-radius: 5%;
+  grid-row-start: 1;
+  grid-row-end: 12;
+  grid-column-start: 11;
+  grid-column-end: span 1;
+}
+
+.grid-container .vitor {
+  padding: 2%;
+  text-align: justify;
+  color: #ffffff;
+  background-color: #19202E;
+  border-radius: 5%;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 10;
+  grid-column-end: span 1;
+}
+
+.grid-container .augusto {
+  padding: 2%;
+  text-align: justify;
+  color: #ffffff;
+  background-color: #48556A;
+  border-radius: 5%;
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 6;
+  grid-row-end: 12;
+}
+
+.grid-container .adriana {
+  padding: 2%;
+  text-align: justify;
+  color: #19202E;
+  background-color: #ffffff;
+  border-radius: 5%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 12;
+  /*adaptando para outros dispositivos*/
 }
