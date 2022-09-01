@@ -13,7 +13,7 @@
 
 .grid-container {
   max-width: 1440px;
-  max-height: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(12 8, 33%);
   grid-template-rows: repeat(12 8, 33%);
@@ -27,9 +27,9 @@
   background-color: #7441C7;
   border-radius: 5%;
   grid-row-start: 1;
-  grid-row-end: 6;
+  grid-row-end: 3;
   grid-column-start: 1;
-  grid-column-end: span 9;
+  grid-column-end: span 5;
 }
 
 .grid-container .michele {
@@ -41,7 +41,7 @@
   grid-row-start: 1;
   grid-row-end: 12;
   grid-column-start: 11;
-  grid-column-end: span 1;
+  grid-column-end: 12;
 }
 
 .grid-container .vitor {
@@ -51,9 +51,9 @@
   background-color: #19202E;
   border-radius: 5%;
   grid-row-start: 1;
-  grid-row-end: 6;
-  grid-column-start: 10;
-  grid-column-end: span 1;
+  grid-row-end: 3;
+  grid-column-start: 6;
+  grid-column-end: span 5;
 }
 
 .grid-container .augusto {
@@ -64,7 +64,7 @@
   border-radius: 5%;
   grid-column-start: 3;
   grid-column-end: 11;
-  grid-row-start: 6;
+  grid-row-start: 3;
   grid-row-end: 12;
 }
 
@@ -76,7 +76,7 @@
   border-radius: 5%;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 6;
+  grid-row-start: 3;
   grid-row-end: 12;
   /*adaptando para outros dispositivos*/
 }
