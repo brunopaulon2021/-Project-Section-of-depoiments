@@ -6,22 +6,28 @@
   box-sizing: border-box;
 }
 
-* html, * body {
+* html,
+* body {
   width: 100%;
   background-color: #CECECE;
 }
 
+.people {
+  text-align: center;
+  justify-content: center;
+}
+
 .grid-container {
   max-width: 1440px;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(12 8, 33%);
   grid-template-rows: repeat(12 8, 33%);
   gap: 2%;
+  margin: 2px;
 }
 
 .grid-container .daniel {
-  padding: 2%;
+  padding: 2px 10px;
   text-align: justify;
   color: #ffffff;
   background-color: #7441C7;
@@ -29,54 +35,139 @@
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
-  grid-column-end: span 5;
+  grid-column-end: 7;
 }
 
 .grid-container .michele {
-  padding: 2%;
+  padding: 2px 10px;
   text-align: justify;
   color: #19202E;
   background-color: #ffffff;
   border-radius: 5%;
   grid-row-start: 1;
   grid-row-end: 12;
-  grid-column-start: 11;
-  grid-column-end: 12;
+  grid-column-start: 10;
+  grid-column-end: 11;
 }
 
 .grid-container .vitor {
-  padding: 2%;
+  padding: 2px 10px;
   text-align: justify;
   color: #ffffff;
   background-color: #19202E;
   border-radius: 5%;
   grid-row-start: 1;
   grid-row-end: 3;
-  grid-column-start: 6;
-  grid-column-end: span 5;
+  grid-column-start: 7;
+  grid-column-end: 10;
 }
 
 .grid-container .augusto {
-  padding: 2%;
+  padding: 2px 10px;
   text-align: justify;
   color: #ffffff;
   background-color: #48556A;
   border-radius: 5%;
-  grid-column-start: 3;
-  grid-column-end: 11;
+  grid-column-start: 7;
+  grid-column-end: 10;
   grid-row-start: 3;
   grid-row-end: 12;
 }
 
 .grid-container .adriana {
-  padding: 2%;
+  padding: 2px 10px;
   text-align: justify;
   color: #19202E;
   background-color: #ffffff;
   border-radius: 5%;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 7;
   grid-row-start: 3;
   grid-row-end: 12;
   /*adaptando para outros dispositivos*/
+}
+
+/* Telas Pequenas */
+@media screen and (min-width: 249px) and (max-width: 480px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 5%;
+  }
+
+  .adriana,
+  .augusto,
+  .daniel,
+  .michele,
+  .vitor {
+    padding: 5%;
+    margin-bottom: 10%;
+  }
+
+  article {
+    padding-top: 20px;
+  }
+
+  p {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    padding-top: 20px;
+  }
+
+  h6 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Telas Médias */
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .augusto,
+  .daniel,
+  .michele,
+  .vitor {
+    width: 40%;
+    margin: 3%;
+    justify-content: center;
+    padding: 5%;
+    margin-bottom: 10%;
+  }
+
+  .adriana {
+    margin-bottom: 10%;
+  }
+
+  article {
+    padding-top: 20px;
+  }
+
+  p {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    padding-top: 20px;
+  }
+
+  h6 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
