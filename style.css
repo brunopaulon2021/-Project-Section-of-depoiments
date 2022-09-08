@@ -129,7 +129,7 @@
 /* ----------------------------------------------------------------------------------------- */
 /* Telas Médias */
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 720px) {
 
 
   .grid-container {
